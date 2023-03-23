@@ -14,13 +14,13 @@ app.get('/',(req, res) => {
 
 app.post('/msg',(req, res) => {
 	console.log(req.body)
-	const msg = {
-		message: 'get msg'
-	}
-	res.json(JSON.parse(JSON.stringify(msg)))
+	// const msg = {
+	// 	message: 'get msg'
+	// }
+	res.json(JSON.parse(JSON.stringify(req.body)))
 })
 
 app.listen(5001, () => {
-	console.log('server is running localhost:5000');
+	console.log('server is running localhost:5001');
 })
 
